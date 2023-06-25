@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<title>Office of the engineering website</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Navigation bar -->
+    <nav>
+      <div class="primary-nav">
+        <a href="#" onclick="scrollToTop()">Home</a>
+          <a onclick="scrollToSection('about-us')">About us</a>
+          <a onclick="scrollToSection('building-permit')">Building Permit</a>
+          <a onclick="scrollToSection('work')">Nature of work</a>
+          <!-- <a onclick="scrollToSection('projects')">Projects</a> -->
+          <a onclick="scrollToSection('contact')">Contact us</a>
+      </div>
+        <img class="icon-menu menu-open" 
+        src="images/icon-menu.svg" alt="">
+        <img class="icon-menu menu-close" 
+        src="images/icon-menu-close.svg" alt="">
+    </nav>
+
+    <picture>
+      <source media="(min-width: 35rem)"
+      srcset="images/logo.jpg">
+      <img class="logo" src="images/logo-mobile.jpg" alt="logo">
+    </picture>
+
+    <!-- Showcase -->
+    <section class="showcase">
+      <div class="intro">
+        <h1 id="heading">discover the Diverse Range of Expertise and Accomplishments of office of the municipal engineer.</h1>
+        <button class="button" onclick="scrollToSection('work')">Explore</button>
+      </div>
+      <img class="showcase-img" src="images/architect.jpg" alt="architect">
+    </section>
+
+    <!-- Mission and vision -->
+    <section class="mission-vision">
+      <h2 id="about-us">Mission and Vision</h2>
+      <div class="mission-vision-card">
+        <div class="card-1">
+          <p><span>Mission:</span> To deliver innovative engineering solutions that bring ideas to life, exceed client expectations, and contribute to the sustainable development of communities.</p>
+        </div>
+        <div class="card-1">
+          <p><span>Vision:</span> To be a trusted leader in the engineering industry, known for our excellence in project proposals, detailed engineering plans, and design, driving positive change and creating a lasting impact.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Team -->
+    <!-- <section>
+      <h2>Our Team</h2>
+      <div class="grid-container">
+        <div class="column">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/profile1.JPG" />
+            </div>
+            <h3>Yancy Garret Saac</h3>
+            <p>Founder</p>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/profile2.JPG" />
+            </div>
+            <h3>Yancy Garret Saac</h3>
+            <p>Developer</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/profile3.JPG" />
+            </div>
+            <h3>Yancy Garret Saac</h3>
+            <p>Designer</p>
+          </div>
+        </div>
+        
+        </div>
+    </section> -->
+
+    <!-- Work section -->
+    <section class="work">
+      <h2 id="work">Nature of work</h2>
+      <div class="accordion">
+        <div class="accordion-content">
+            <header>
+                <h4><span>I.</span> PROJECT PROPOSALS, DETAILED ENGINEERING PLAN PREPARATION & DESIGN</h4>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <ul class="list">
+              <li>Site visit for the proposed project for Infra like buildings (data gathering)</li>
+              <li>Site visit for the proposed project for road Rehab/Concreting (surveying/geotagging) per km</li>
+              <li>Preparation of project proposals (Simple)</li>
+              <li>Preparation of project proposals (Complex)</li>
+              <li>Preparation of project profile</li>
+              <li>Preparation of Plans & Design</li>
+              <li>Preparation of program of work</li>
+            </ul>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>II.</span> CONSTRUCTION & MAINTAINANCE (PROJECT IMPLEMENTATION & MONITORING)</h4>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <ul class="list">
+              <li>Road maintenance</li>
+              <li>Project Supervision & Monitoring</li>
+              <li>Preparation of project report (Monthly accomplishment report per project until project completion) per project</li>
+              <li>Preparation of project report, Certificate of Completion, Certificate of turn-Over of the project</li>
+            </ul>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>III.</span> IMPLEMENTATION NATIONAL BUILDING CODE (IRR) TASK FORCE BUILDING PERMIT</h4>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <ul class="list">
+              <li>Issuance of notice of any illegal construction in the municipality conducted every Tuesday & Thursday</li>
+              <li>Assessment of building/electrical/mechanical & plumbing permit application</li>
+              <li>Issuance of approved building/electrical/mechanical & plumbing permit</li>
+              <li>Recording, posting of approved building permits</li>
+              <li>Submission of monthly approved building permits to NSO every 1st – 2nd day of the following month</li>
+              <li>Final inspection of building permits (upon request of the clients)</li>
+              <li>Issuance/Approval of certificate of occupancy</li>
+            </ul>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>IV.</span> INDIGENOUS DWELINGS</h4>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <ul class="list">
+              <li>Inspection of indigenous dwelling applicants</li>
+              <li>Approval of indigenous dwelling</li>
+              <li>Recording, posting and filling of approved indigenous dwellings</li>
+              <li>Task force building permits</li>
+            </ul>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>V.</span> IMPLEMENTATION OF GPPB (RA 9184)</h4>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <ul class="list">
+              <li>Presentation of bill of quantities for space of work based to POW for infra projects, Bid documents preparation as to procurement IRR of the Philippines and publication to PhilGEPS</li>
+              <li>Preparation of Bid documents and publication to PhilGEPS for procurement of goods</li>
+              <li>Evaluation of Bid proposals, preparation of BAC resolution recommending awards, notice of awards, draft contract and notice to proceed for infrastructure projects</li>
+              <li>Evaluation of Bid proposals, preparation of BAC resolution recommending for awards, notice of awards, draft contract and notice to proceed for procurement of goods</li>
+            </ul>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>VI.</span> INDIGENOUS DWELINGS</h4>
+            </header>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>VII.</span> Preparation of disbursement vouchers, labor payroll with complete supporting documents prepared with in 1 day</h4>
+            </header>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>VIII.</span> Attending to client's request/queries acted upon within 5mins</h4>
+            </header>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>IX.</span> APPROVAL and SIGNING (DOCUMENTS/LEAVE/TRAVEL ORDERS/PASS SLIP)</h4>
+            </header>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>X.</span> PREPARATION OF LETTERS and COMMUNICATIONS</h4>
+            </header>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>XI.</span> ATTENDANCE ON TRAININGS/MEETINGS/SEMINARS/CONFERENCES</h4>
+            </header>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>XII.</span> MAINTENANCE, CLEANLINESS and BEAUTIFICATION OF OFFICE</h4>
+            </header>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>XIII.</span> GENERATOR SET OPERATOR</h4>
+            </header>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>XIV.</span> REPAIR & MAINTENANCE OF ELECTRICAL WIRINGS OF MUNICIPAL BUILDINGS</h4>
+            </header>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>XV.</span> CARPENTRY & PAINTING WORKS (minor works only)</h4>
+            </header>
+        </div>
+        </div>
+    </section>
+
+    <section class="work">
+      <h2 id="building-permit">Building Permit Process</h2>
+      <div class="accordion">
+        <div class="accordion-content">
+            <header>
+                <h4><span>I.</span> Determine Permit Requirements</h4>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <ul class="list">
+              <li>Before starting any construction work, it's essential to determine the permit requirements specific to your project. Factors such as the project's scope, location, and intended use will influence the permits needed. Our team can assist you in identifying the necessary permits and provide guidance on the application process.</li>
+            </ul>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>II.</span> Preparing Documentation</h4>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <ul class="list">
+              <li>To initiate the permit application, you'll need to gather the required documentation. Typical documents include architectural drawings, engineering plans, site surveys, and specifications detailing the proposed construction. Our office can provide a checklist of the necessary documents to streamline the process.</li>
+            </ul>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>III.</span> Submitting the Application</h4>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <ul class="list">
+              <li>Once you have compiled the necessary documents, it's time to submit your application. You can either submit it in person at our office or through our online permit portal, depending on the available options. Our team will review your application for completeness and accuracy before processing it further.</li>
+            </ul>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>IV.</span> Application Review and Approval</h4>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <ul class="list">
+              <li>After receiving your application, our team will review it thoroughly to ensure compliance with building codes, zoning regulations, and other relevant criteria. This review process may involve multiple departments, such as structural engineering, electrical, plumbing, and fire safety. If modifications or additional information is required, we will promptly communicate with you to expedite the approval process.</li>
+            </ul>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>V.</span> Fee Assessment and Payment</h4>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <ul class="list">
+              <li>During the review period, our office will assess the appropriate fees for your project based on its size, complexity, and duration. Once the fees have been calculated, you will receive an invoice detailing the payment options and instructions. It's important to fulfill the fee requirements promptly to avoid delays in the permit issuance.</li>
+            </ul>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>VI.</span> Permit Issuance</h4>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <ul class="list">
+              <li>Upon completion of the review process and payment of the required fees, the building permit will be issued to you. The permit will specify the approved construction activities, any special conditions, and the validity period. It is crucial to prominently display the permit at the construction site and ensure compliance with its terms.</li>
+            </ul>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>VII.</span> Inspections</h4>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <ul class="list">
+              <li>Throughout the construction phase, our office will conduct inspections to verify that the work aligns with the approved plans and applicable codes. Inspections may cover various aspects such as foundation, framing, electrical, plumbing, and final occupancy. You will be provided with an inspection schedule and guidelines to ensure a smooth process.</li>
+            </ul>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <h4><span>VIII.</span> Project Completion and Final Approval</h4>
+                <i class="fa-solid fa-plus"></i>
+            </header>
+            <ul class="list">
+              <li>Once the construction is complete, a final inspection will be conducted to determine if the project meets all requirements and can be occupied or utilized. If the inspection is successful, our office will grant the final approval and issue a Certificate of Occupancy or Compliance, depending on the project type.</li>
+            </ul>
+        </div>
+        </div>
+    </section>
+
+  <!-- Project -->
+    <!-- <section class="project">
+      <h2 id="projects">Projects</h2>
+      <div class="project-container">
+        <div class="project-box">
+          <div class="project-img">
+            <img src="images/blog-1.jpeg" alt="">
+          </div>
+          <div class="project-text">
+            <span>18 July 2021 / Architecture</span>
+            <a href="#" class="project-title">What has happened of all the web design ideas?</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolores aliquid iure maxime magnam? Numquam, vitae commodi sapiente minima similique aperiam nobis asperiores, omnis iure adipisci atque porro itaque accusantium?</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+        <div class="project-box">
+          <div class="project-img">
+            <img src="images/blog-2.jpeg" alt="">
+          </div>
+          <div class="project-text">
+            <span>18 July 2021 / Architecture</span>
+            <a href="#" class="project-title">What has happened of all the web design ideas?</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolores aliquid iure maxime magnam? Numquam, vitae commodi sapiente minima similique aperiam nobis asperiores, omnis iure adipisci atque porro itaque accusantium?</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+        <div class="project-box">
+          <div class="project-img">
+            <img src="images/blog-3.jpeg" alt="">
+          </div>
+          <div class="project-text">
+            <span>18 July 2021 / Architecture</span>
+            <a href="#" class="project-title">What has happened of all the web design ideas?</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolores aliquid iure maxime magnam? Numquam, vitae commodi sapiente minima similique aperiam nobis asperiores, omnis iure adipisci atque porro itaque accusantium?</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+      <!-- Contact -->
+  <section class="contact">
+    <h2 id="contact">Contact us</h2>
+    <div class="contact-container">
+      <div class="card-info">
+        <h4>Contact Info</h4>
+        <p><i class="fa-solid fa-house"></i>City Engineer's Office</p>
+        <p><i class="fa-solid fa-location"></i>Rizal Street Poblacion, Kabacan, Cotabato</p>
+        <p><i class="fa-solid fa-phone"></i>064-572- 2742/2480</p>
+        <p><i class="fa-solid fa-envelope"></i>lgukabacan2017@gmail.com</p>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31673.26371105518!2d124.79320807899357!3d7.107685114809777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f88d0cc53092d7%3A0x7c03bd20683d976e!2sMunicipality%20of%20Kabacan!5e0!3m2!1sen!2sph!4v1687064094544!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  </div>
+  <script defer src="main.js"></script>
+</body>
+</html>
